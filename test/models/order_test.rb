@@ -17,6 +17,7 @@ class OrderTest < ActiveSupport::TestCase
     assert_equal (@product1.price + @product2.price), order.total
   end
 
+
   test 'builds 2 placements for the order' do
     @order.build_placements_with_product_ids_and_quantities [
       { product_id: @product1.id, quantity: 2 },
@@ -28,10 +29,4 @@ class OrderTest < ActiveSupport::TestCase
     end
   end
 
-
-#  test 'Should have a positive total' do
-#     order = orders(:one)
-#     order.total = -1
-#     assert_not order.valid?
-#   end
 end

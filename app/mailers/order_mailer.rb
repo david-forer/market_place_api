@@ -7,10 +7,4 @@ class OrderMailer < ApplicationMailer
     mail to: @user.email, subject: 'Order Confirmation'
   end
 
-
-  # def send_confirmation
-  #   @greeting = "Hi"
-
-  #   mail to: "to@example.org"
-  # end
 end
