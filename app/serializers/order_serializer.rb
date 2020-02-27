@@ -4,4 +4,5 @@ class OrderSerializer
   has_many :products
   
   #attributes 
+  cache_options enabled: true, cache_length: 12.hours
 end
